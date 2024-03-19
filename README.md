@@ -15,3 +15,6 @@ Syazantri Salsabila - AdvProg B - 2206029443 <hr>
 > ***How to split between response and why the refactoring is needed.*** <br>
 > * Split between response caranya dengan pakai ```if else``` dengan membaca ```request_line``` apakah isinya ```"GET / HTTP/1.1"``` atau tidak. Jika iya ke hello.html, jika tidak ke 404.html, dan akan ada perbedaan ```status_line``` yang dibuat juga.
 > * Kenapa refactoring dibutuhkan, supaya lebih mudah bedain case antara ```if else``` nya (karena sekarang di dalam blok ```if else``` hanya mengandung kondisional perbedaan mereka saja).
+
+4️⃣ Commit 4 Reflection Notes
+> Kalau kita ketik URI nya pakai ```/``` aja, app nya bakal respon secara cepat. Tapi kalau kita pakai ```/sleep``` terus baru ```/``` pakai window lain, app nya bakal respon dengan delay 5 menit untuk memastikan sleep sebelumnya sudah sampai selesai. Ini bakal jadi masalah karena user pada umumnya tidak akan mau nunggu delay 5 detik. Masalah ini bakal diatasi sama commit selanjutya.
