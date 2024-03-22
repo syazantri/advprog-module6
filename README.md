@@ -22,3 +22,7 @@ Syazantri Salsabila - AdvProg B - 2206029443 <hr>
 5️⃣ Commit 5 Reflection Notes
 > ***Try to understand how the ThreadPool works.*** <br>
 > ThreadPool adalah sekumpulan spawned thread yang siap menghandle task. ThreadPool akan memungkinkan proses connection secara concurrently, jadi bisa menghasilkan throughput server lebih besar. ThreadPool akan mengeksekusi connection secara asynchronous. Thread hanya paling banyak dibuat 4 jadi server kita tidak akan overloaded. Ketika ada request menjalankan ```/sleep```, request lain tetap akan mendapatkan respon secara cepat. Walau begiitu ThreadPool harus dilimit supaya tidak rawan terserang DoS.
+
+6️⃣ Commit Bonus Reflection Notes
+> ***Try to create a function build as a replacement to new and compare.*** <br>
+> Saya mencoba mengikuti sesuai di buku rust di listing 12-9. Perbedaan antara new dan build adalah kalau pakai build, kita bisa lebih jelas mengerror-handling dengan menggunakan PoolCreationError. Hal ini berbeda dengan ketika menggunakan new, kita berekspektasi untuk pembuatan thread pool tidak gagal.
